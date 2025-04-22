@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+/*
+body
+*/
+body {
+    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-style: normal;
+}
+
+/*
+anchor
+*/
+a{
+    text-decoration: none;
+    /* line-height: 0; */
+}
+/*
+label,input
+*/
+label, input{
+    cursor: pointer;
+}
+
+input{
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    border:2px solid red;
+}
+
+/*
+section
+*/
+.section-header{
+    text-align: center;
+    background-color:cornsilk;
+    align-items: center;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*
+button-setting
+*/
+button {
+    width: 100%;
+    margin-top: 20px;
+    /* padding-bottom: px; */
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border: none;
+}
+
+/*
+grid-setting
+*/
+.div-grid{
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+
+    .div-grid{
+        display: block;
+        /* text-align: center; */
+    }
+
+    .div-grid > .grid-container{
+        /* display: block; */
+        width: 100%;
+        margin: 0;
+        /* これが要る */
+        margin-bottom: 5px;
+    }
+}
+
+.div-grid > .grid-container{
+    cursor: pointer;
+}
+
+.grid-container-2 {
+    width: 50%;
+    padding: 15px;
+    margin: 0 10px;
+    background-color: #CC33FF;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.grid-container-4 {
+    width: 25%;
+    padding: 15px;
+    margin: 0 10px;
+    background-color: #CC33FF;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.grid-container-6 {
+    width: 16.6%;
+    padding: 15px;
+    margin: 0 10px;
+    background-color: #CC33FF;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*
+div-background-color
+*/
+.div-grid-One{
+    background-size: auto auto;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 2px, rgba(1, 151, 255, 1) 2px, rgba(1, 151, 255, 1) 8px );
+}
+
+.div-grid-two{
+    background-size: auto auto;
+    background-color: rgba(255, 255, 255, 1);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 2px, rgba(255, 1, 114, 1) 2px, rgba(255, 1, 114, 1) 8px );
+}
+
+@media screen and (max-width: 400px) {
+
+    .div-grid-One,
+    .div-grid-two{
+        padding-top: 14px;
+    }
+}
+
+/*
+table-setting
+*/
+.form-table{
+    margin: 0 auto; 
+    /* ブロック要素に上下'0'、左右'auto'を設定すると中央寄せになる。
+    わざわざ他のブロック要素で囲まなくて良い */
+}
+
+@media screen and (max-width: 400px) {
+    .form-table,
+    .form-table input,
+    .form-table button{
+        width: 100%;
+    }
+}

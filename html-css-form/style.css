@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/*
+body
+*/
+body {
+    font-family: "Noto Sans JP", "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-style: normal;
+}
+
+/*
+anchor
+*/
+a{
+    text-decoration: none;
+    /* line-height: 0; */
+}
+/*
+label,input
+*/
+label, input{
+    cursor: pointer;
+}
+
+input{
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    border:2px solid red;
+}
+
+/*
+section
+*/
+.section-header{
+    text-align: center;
+    background-color:cornsilk;
+    align-items: center;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*
+button-setting
+*/
+button {
+    width: 100%;
+    margin-top: 20px;
+    /* padding-bottom: px; */
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border: none;
+}
+
+/*
+table-setting
+*/
+.form-table{
+    margin: 0 auto; 
+    /* ブロック要素に上下'0'、左右'auto'を設定すると中央寄せになる。
+    わざわざ他のブロック要素で囲まなくて良い */
+}
+
+@media screen and (max-width: 400px) {
+    .form-table,
+    .form-table input,
+    .form-table button{
+        width: 100%;
+    }
+}
